@@ -18,15 +18,15 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include <string.h>
+#include <cstring>
 #include <typeinfo>
 #include <vector>
 
 #include "config.h"   // for HAVE_xxx macros
 
-#include "apl-sqlite.hh"
-#include "Connection.hh"
-#include "Provider.hh"
+#include "sql/Connection.hh"
+#include "sql/Provider.hh"
+#include "sql/apl-sqlite.hh"
 
 #include "Quad_SQL.hh"
 #include "Security.hh"

@@ -55,7 +55,7 @@ SET(${CXX_STANDARD_REQUIRED} ON)    # Comment out if C++11 is not mendatory
 # Project's Options
 # ====================================
 
-OPTION(BUILD_TESTING        "Enable tests"       ON)
+OPTION(BUILD_TESTING        "Enable tests"       OFF)
 OPTION(BUILD_BENCHMARK      "Build Benchmarks"   OFF)
 OPTION(BUILD_EXAMPLES       "Build Examples"     OFF)
 OPTION(BUILD_DOCUMENTATION  "Build docs"         OFF)
@@ -132,18 +132,17 @@ ADD_CUSTOM_TARGET(clang-tidy
 
 # Resource Files
 # ==============
-FILE(GLOB_RECURSE APLUS_FILES *.+)
-
-add_custom_target(zothers ALL SOURCES
-    ${MAKE_FILES}
-    ${JSON_FILES}
-    README.md
-    .travis.yml
-    .gitignore
-)
-
-
-add_custom_target(za+ ALL SOURCES
-    ${APLUS_FILES}
-)
-
+#FILE(GLOB_RECURSE APLUS_FILES *.+)
+#
+#add_custom_target(zothers ALL SOURCES
+#    ${MAKE_FILES}
+#    ${JSON_FILES}
+#    .travis.yml
+#    .gitignore
+#)
+#
+#
+#add_custom_target(za+ ALL SOURCES
+#    ${APLUS_FILES}
+#)
+#
